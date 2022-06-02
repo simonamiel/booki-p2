@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400&display=swap');
+
+/*==========================================================*/
+/*Import fonts from google fonts = Raleway*/
+/*==========================================================*/
+/*Fonts Raleway current on page*/
+/*First statement for box-sizing*/
+/* box-sizing is applied to all elements */
+/*==========================================================*/
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+/*==========================================================*/
+/*general positioning PAGE*/
+/*==========================================================*/
+.generalPosition {
+    padding-left: 15px;
+}
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.columnFlexAround {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.columnFlexCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.columnFlexBetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*==========================================================*/
+/*general size and position Logo */
+/*==========================================================*/
+.sizeLogo {
+    width: 80px;
+    height: 30px;
+}
+.marginLogo {
+    display: flex;
+    justify-content: center;
+}
+/*==========================================================*/
+/*general size NAV */
+/*==========================================================*/
+.sizeNav {
+    height: 100px;
+    align-items: center;
+}
+
+.spaceLink {
+    width: 100%;
+}
+
+.sizeLink {
+    width: 100%;
+    height: 50px;
+}
+
+/*==========================================================*/
+/*general design NAV */
+/*==========================================================*/
+.nolineLink {
+    text-decoration: none;
+}
+
+.colorLiensNav:hover {
+    color: #0065FC;
+}
+
+.colorLiensNav {
+    color: black;
+}
+.borderNav {
+    border-bottom: 2px solid #f2f2f2;
+}
+.borderNav:hover {
+    border-bottom: 2px solid #0065FC;
+}
+/*==========================================================*/
+/*General colors and design of page*/
+/*==========================================================*/
+.colorBlue {
+    color: #0065FC;
+}
+
+.colorLightBlue {
+    color: #deebff;
+}
+
+.colorGrey {
+    color: #f2f2f2;
+}
+.colorBlack {
+    color: black;
+}
+.backgroundBlue {
+    background-color: #0065FC;
+}
+
+.backgroundLightBlue {
+    background-color: #deebff;
+}
+
+.backgroundGrey {
+    background-color: #f2f2f2;
+}
+
+.backgroundWhite {
+    background-color: white;
+}
+
+.noBorder {
+    border: none;
+}
+/*==========================================================*/
+/*General fonts design of page*/
+/*==========================================================*/
+.h1 {
+    font-size: 22px;
+    font-weight: bold;  
+}
+.boldText {
+    font-weight: bold;
+}
+/*==========================================================*/
+/*Search Bar css*/
+/*==========================================================*/
+.marginSearchBar {
+    min-width: 300px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.iconeSize {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.searchPlaceholder {
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    border: 1px solid #f2f2f2;
+    border-right: none;
+}
+.borderSearchBarMobile {
+    width: 300px;
+    height: 50px;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.paddingTextSearch {
+    padding-left: 20px;
+}
+
+.buttonSearch {
+    display: none;
+}
+.buttonSearchIcon {
+    height: 50px;
+    width: 50px;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#placeholderText::placeholder {
+    font-weight: bold;
+    color: black;
+}
+/*==========================================================*/
+/*Filters page css*/
+/*==========================================================*/
+.marginFilters {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+}
+.filtersWrapMobile {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.marginFiltersTitle {
+    margin-right: 20px;
+}
+
+.filtersTextIcons {
+    border: 2px solid #f2f2f2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.filtersTextIcons:hover .filtersText {
+    color: #0065FC;
+}
+
+.filtersTextIcons:hover .filtersIcons {
+    color: #deebff;
+    background-color: #0065FC;
+}
+
+.filtersText {
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filtersIcons {
+    margin-left: -2px;
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065FC;
+    background-color: #deebff;
+}
+
+/*==========================================================*/
+/*Informations design css*/
+/*==========================================================*/
+.information {
+    display: flex;
+    align-items: center;
+}
+
+.infoIcon {
+    height: 20px;
+    width: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    color: #0065FC;
+    margin-right: 10px;
+}
+/*==========================================================*/
+/*General card group css*/
+/*==========================================================*/
+.cardGroup {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*==========================================================*/
+/*Accommodations design css*/
+/*==========================================================*/
+.accomodationsSize {
+    flex: 2;
+    flex-grow: 2;
+    height: 650px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.accomodationsLine1 {
+    margin-bottom: 20px;
+}
+
+.accomodationsLine2 {
+    margin-top: 20px;
+}
+
+.accomodationsCard {
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+    padding: 4px 4px 10px 4px;
+}
+
+.accomodationsImg {
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+
+.accomodationsSpecBox {
+    width: 90%;
+}
+
+/*==========================================================*/
+/*Popular design css*/
+/*==========================================================*/
+.popularBoxPosition {
+    margin-right: 20px;
+}
+
+.popularSize {
+    flex: 1;
+    flex-grow: 1;
+    height: 650px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.popularCard {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    padding: 1% 0px 1% 1%;
+}
+
+.popularImg {
+    object-fit: cover;
+    background-position: center;
+    width: 40%;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
+}
+
+.popularBox {
+    margin-bottom: 20px;
+}
+
+.popularSpecBox {
+    width: 60%;
+    padding-left: 5%;
+}

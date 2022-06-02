@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400&display=swap');
+/*==========================================================*/
+/*Import fonts from google fonts = Raleway*/
+/*==========================================================*/
+/*Fonts Raleway current on page*/
+/*First statement for box-sizing*/
+/* box-sizing is applied to all elements */
+/*==========================================================*/
+*{
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+/*==========================================================*/
+/*general positioning PAGE*/
+/*==========================================================*/
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.columnFlexAround {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*==========================================================*/
+/*general size NAV */
+/*==========================================================*/
+.sizeNav {
+    height: 100px;
+}
+
+.spaceLink {
+    width: 25%;
+}
+
+.sizeLink {
+    width: 140px;
+    height: 98px;
+}
+/*==========================================================*/
+/*general design NAV */
+/*==========================================================*/
+.nolineLink {
+    text-decoration: none;
+}
+.colorLiensnavb {
+    color: #0065FC;
+}
+.colorLiensnavn {
+    color: black;
+}
+.borderNavtop {
+    border-top: 2px solid #0065FC;
+}
+.marginLogo {
+    position: relative;
+    margin-left: 20px;
+}
+/*==========================================================*/
+/*General colors and design of page*/
+/*==========================================================*/
+.colorBlue {
+    color: #0065FC;
+}
+.colorLightBlue {
+    color: #deebff;
+}
+.colorGrey {
+    color: #f2f2f2;
+}
+.backgroundBlue {
+    background-color: #0065FC;
+}
+.backgroundLightBlue {
+    background-color: #deebff;
+}
+.backgroundGrey {
+    background-color: #f2f2f2;
+}
+.backgroundWhite {
+    background-color: white;
+}
+.noBorder {
+    border: none;
+}
+/*==========================================================*/
+/*Header css*/
+/*==========================================================*/
+.marginSearchBar {
+    width: 400px;
+    border-radius: 10px;
+}
+.iconeSize {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px 0px 0px 10px;
+}
+.searchPlaceholder {
+    height: 50px;
+    width: 230px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    border: 1px solid #f2f2f2;
+}
+.paddingTextSearch {
+    padding-left: 20px;
+}
+.buttonSearch {
+    height: 50px;
+    width: 120px;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+#placeholderText::placeholder {
+    font-weight: bold;
+    color: black;
+}
+/*==========================================================*/
+/*Filters page css*/
+/*==========================================================*/
+.marginFilters {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.filters {
+    display: flex;
+    align-items: center;
+}
+.marginFiltersTitle {
+    margin-right: 20px;
+}
+.filtersTextIcons {
+    border: 2px solid #f2f2f2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+.filtersTextIcons:hover .filtersText {
+    color: #0065FC;
+}
+.filtersTextIcons:hover .filtersIcons {
+    color: #deebff;
+    background-color: #0065FC;
+}
+.filtersText {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.filtersIcons {
+    margin-left: -2px;
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065FC;
+    background-color: #deebff;
+}
+/*==========================================================*/
+/*Informations design css*/
+/*==========================================================*/
+.information {
+    display: flex;
+    align-items: center;
+}
+.infoIcon {
+    height: 20px;
+    width: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    color: #0065FC;
+    margin-right: 10px;
+}
+/*==========================================================*/
+/*Accommodations and Popular design css*/
+/*==========================================================*/
+.accomodationsSizeBox {
+    flex: 2;
+    height: 650px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.popularSizeBox {
+    flex: 1;
+    height: 650px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.accomodationCardGroup {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.accomodationsLine1 {
+    margin-bottom: 20px;
+}
+.accomodationsLine2 {
+    margin-top: 20px;
+}
+.accomodationCard {
+    width: 31%;
+    height: auto;
+    border-radius: 20px;
+    padding: 4px 4px 10px 4px;
+}
+.accomodationsImg1 {
+    background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+.accomodationsImg2 {
+    background-image: url("../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+.accomodationsImg3 {
+    background-image: url("../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+.accomodationsImg4 {
+    background-image: url("../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+.accomodationsImg5 {
+    background-image: url("../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+.accomodationsImg6 {
+    background-image: url("../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
