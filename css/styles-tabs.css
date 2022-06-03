@@ -15,8 +15,9 @@
 /*==========================================================*/
 /*general positioning PAGE*/
 /*==========================================================*/
-.generalPosition {
+.paddingGeneral {
     padding-left: 20px;
+    padding-right: 20px;
 }
 .flexCenter {
     display: flex;
@@ -35,7 +36,10 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.flexStart {
+    display: flex;
+    justify-content: flex-start;
+}
 .columnFlexAround {
     display: flex;
     flex-direction: column;
@@ -51,6 +55,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.marginBottomGeneral {
+    margin-bottom: 20px;
 }
 /*==========================================================*/
 /*general size and position Logo */
@@ -205,7 +212,7 @@
     display: flex;
     align-items: center;
 }
-.filtersWrapMobile {
+.filtersMobile {
     flex-direction: column;
     align-items: flex-start;
 }
@@ -264,36 +271,49 @@
     margin-right: 10px;
 }
 /*==========================================================*/
-/*General card group css*/
+/*General box group css*/
 /*==========================================================*/
-.cardGroup {
+.boxGroup {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 /*==========================================================*/
 /*Accommodations design css*/
 /*==========================================================*/
 .accomodationsSize {
-    flex: 2;
-    flex-grow: 2;
-    height: 650px;
-    margin-right: 20px;
+    flex: none;
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
     border-radius: 10px;
+    background-color: #f2f2f2;
+    margin-top: 50px;
 }
 
 .accomodationsLine1 {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    flex-direction: column;
 }
 
 .accomodationsLine2 {
-    margin-top: 20px;
+    margin-top: 0px;
+    flex-direction: column;
 }
 
 .accomodationsCard {
-    width: 30%;
+    width: 100%;
     height: auto;
     border-radius: 20px;
-    padding: 4px 4px 10px 4px;
+    padding: 0.5%;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.accomodationsCard:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color: #deebff;
 }
 
 .accomodationsImg {
@@ -305,7 +325,40 @@
 }
 
 .accomodationsSpecBox {
-    width: 90%;
+    width: 95%;
+    height: 47%;
+}
+
+.accomodationMarginText {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.accomodationMarginText {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.accomodationMarginStars {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#accomodations {
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+/*==========================================================*/
+/*Read more design css*/
+/*==========================================================*/
+.readmoreText {
+    font-weight: bold;
+    color: black;
+}
+
+.readmoreText:hover {
+    color: #0065FC;
+    cursor: pointer;
 }
 
 /*==========================================================*/
@@ -316,33 +369,170 @@
 }
 
 .popularSize {
-    flex: 1;
-    flex-grow: 1;
+    flex: none;
+    width: 100%;
     height: 650px;
-    margin-left: 20px;
+    margin-left: 0px;
     border-radius: 10px;
+    background-color: #f2f2f2;
 }
 
 .popularCard {
-    width: 100%;
+    background-color: white;
     height: auto;
     border-radius: 20px;
-    padding: 1% 0px 1% 1%;
+    padding: 1% 0 1% 1%;
+}
+
+.popularCard:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color: #deebff;
 }
 
 .popularImg {
     object-fit: cover;
     background-position: center;
-    width: 40%;
-    height: 160px;
+    width: 35%;
+    height: 150px;
     border-radius: 15px 0 0 15px;
+    margin-right: 5%;
 }
 
 .popularBox {
-    margin-bottom: 20px;
+    height: 85%;
 }
 
 .popularSpecBox {
-    width: 60%;
-    padding-left: 5%;
+    width: 45%;
+}
+
+.popularMarginText {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.popularMarginStars {
+    margin-bottom: 5px;
+}
+
+/*==========================================================*/
+/*Activities design css*/
+/*==========================================================*/
+.activitiesGeneral {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.activitesSizeLarge {
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+    height: auto;
+}
+
+.activitesSizeSmall {
+    width: 100%;
+    height: auto;
+}
+
+.activitiesCardLarge {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+    margin-bottom: 50px;
+}
+
+.activitiesCardLarge:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color: #f2f2f2;
+}
+
+.activitiesCardSmall {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+    margin-bottom: 50px;
+}
+
+.activitiesCardSmall:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color: #f2f2f2;
+}
+
+.activitiesImgLarge {
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
+
+.activitiesImgMedium {
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
+
+.activitiesImgSmall {
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
+
+.activitiesImgExtraSmall {
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
+
+.activitiesTitle {
+    height: 70px;
+}
+
+.activitiesTitlePosition {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5%;
+    width: 95%;
+}
+
+/*==========================================================*/
+/*Footer design css*/
+/*==========================================================*/
+.footerSize {
+    height: 250px;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.flexStartFooter {
+    display: flex;
+    justify-content: flex-start;
+}
+.footerCard {
+    width: 33%;
+}
+
+.footerTextPosition {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footerTextDesign {
+    color: black;
+}
+
+.footerTextDesign:hover {
+    color: #0065FC;
+    cursor: pointer;
 }

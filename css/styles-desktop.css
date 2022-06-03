@@ -13,8 +13,9 @@
 /*==========================================================*/
 /*general positioning PAGE*/
 /*==========================================================*/
-.generalPosition {
+.paddingGeneral {
     padding-left: 20px;
+    padding-right: 20px;
 }
 .flexCenter {
     display: flex;
@@ -31,6 +32,10 @@
     justify-content: space-between;
     align-items: center;
 }
+.flexStart {
+    display: flex;
+    justify-content: flex-start;
+}
 .columnFlexAround {
     display: flex;
     flex-direction: column;
@@ -46,6 +51,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.marginBottomGeneral {
+    margin-bottom: 20px;
 }
 /*==========================================================*/
 /*general size and position Logo */
@@ -139,7 +147,7 @@
 .marginSearchBar {
     width: 445px;
     border-radius: 10px;
-    margin-left: -5px;
+    margin-left: -20px;
 }
 .iconeSize {
     height: 50px;
@@ -236,9 +244,9 @@
     margin-right: 10px;
 }
 /*==========================================================*/
-/*General card and specbox group css*/
+/*General box group css*/
 /*==========================================================*/
-.cardGroup {
+.boxGroup {
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -248,22 +256,28 @@
 /*==========================================================*/
 .accomodationsSize {
     flex: 2;
-    flex-grow: 2;
     height: 650px;
     margin-right: 20px;
     border-radius: 10px;
+    background-color: #f2f2f2;
 }
 .accomodationsLine1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .accomodationsLine2 {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .accomodationsCard {
-    width: 30%;
-    height: auto;
+    width: 32%;
+    height: 230px;
     border-radius: 20px;
-    padding: 4px 4px 10px 4px;
+    padding: 0.5%;
+    background-color: white;
+}
+.accomodationsCard:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #deebff;
 }
 .accomodationsImg {
     object-fit: cover;
@@ -273,7 +287,31 @@
     border-radius: 15px 15px 0 0;
 }
 .accomodationsSpecBox {
-    width: 90%;
+    width: 95%;
+    height: 47%;
+}
+.accomodationMarginText {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.accomodationMarginText {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.accomodationMarginStars {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*==========================================================*/
+/*Read more design css*/
+/*==========================================================*/
+.readmoreText {
+    font-weight: bold;
+    color: black;
+}
+.readmoreText:hover {
+    color: #0065FC;
+    cursor: pointer;
 }
 /*==========================================================*/
 /*Popular design css*/
@@ -283,30 +321,42 @@
 }
 .popularSize {
     flex: 1;
-    flex-grow: 1;
     height: 650px;
     margin-left: 20px;
     border-radius: 10px;
+    background-color: #f2f2f2;
 }
 .popularCard {
-    width: 100%;
+    background-color: white;
     height: auto;
     border-radius: 20px;
-    padding: 1% 0px 1% 1%;
+    padding: 1% 0 1% 1%;
+}
+.popularCard:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #deebff;
 }
 .popularImg {
     object-fit: cover;
     background-position: center;
-    width: 40%;
-    height: 160px;
+    width: 35%;
+    height: 150px;
     border-radius: 15px 0 0 15px;
+    margin-right: 5%;
 }
 .popularBox {
-    margin-bottom: 20px;
+    height: 85%;
 }
 .popularSpecBox {
-    width: 60%;
-    padding-left: 5%;
+    width: 45%;
+}
+.popularMarginText {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.popularMarginStars {
+    margin-bottom: 5px;
 }
 /*==========================================================*/
 /*Activities design css*/
@@ -315,25 +365,95 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.activitiesSize {
+.activitesSizeLarge {
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
-.activitiesCard {
+.activitesSizeSmall {
+    width: 23%;
+    height: 600px;
+}
+.activitiesCardLarge {
     width: 23%;
     border-radius: 15px;
-    box-shadow: 0 1px 5px 0 #f2f2f2;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
-.activitiesImg {
+.activitiesCardLarge:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #f2f2f2;
+}
+.activitiesCardSmall {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.activitiesCardSmall:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #f2f2f2;
+}
+
+.activitiesImgLarge {
     object-fit: cover;
     background-position: center;
     width: 100%;
-    height: 450px;
+    height: 530px;
     border-radius: 15px 15px 0 0;
 }
-.acitivitiesSpecBox {
-    width: 90%;
+.activitiesImgMedium {
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+}
+.activitiesImgSmall {
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
+.activitiesImgExtraSmall {
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
 }
 .activitiesTitle {
-    margin: 10px 0 10px 0;
+    height: 70px;
+}
+.activitiesTitlePosition {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5%;
+    width: 95%;
+}
+/*==========================================================*/
+/*Footer design css*/
+/*==========================================================*/
+.footerSize {
+    height: 250px;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.flexStartFooter {
+    display: flex;
+    justify-content: flex-start;
+}
+.footerCard {
+    width: 33%;
+}
+.footerTextPosition {
+    margin-top: 20px;
+}
+.footerTextDesign {
+    color: black;
+}
+.footerTextDesign:hover {
+    color: #0065FC;
+    cursor: pointer;
 }
